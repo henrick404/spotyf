@@ -1,3 +1,25 @@
+@keyframes mostraplay{
+    from{
+        bottom: 40px;
+        opacity: 0;
+    }
+    to{
+        bottom: 50px;
+        opacity: 1; 
+    }
+
+}
+
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+
+
 body{
     padding: 0px;
     margin: 0px;
@@ -25,6 +47,7 @@ header{
     border-radius: 300px;
     margin-left:10px ;
 }
+
 
 .casa{
     font-size: 30px;
@@ -102,12 +125,12 @@ header{
 
 
 #navegar{
-
+    margin-top: 80px;
     margin-left: 30%;
     width: 70%;
-    padding-top: 80px;
     background-color: rgb(46, 46, 46);
     border-radius: 20px;
+
 }
 .ordem{
     display: flex;
@@ -124,10 +147,29 @@ header{
 
 }
 
+.quebra2{
+    display: flex;
+    width: 190px;
+    height: 235px;
+    flex-wrap: wrap;
+    border-radius: 6px;
+
+}
 .quebra:hover{
-    background: linear-gradient( to bottom ,rgb(46, 46, 46),rgb(90, 90, 90) );
+    background: linear-gradient( to bottom ,rgb(46, 46, 46),rgb(62, 62, 62) );
+    .play{
+        animation: mostraplay 400ms 0s;
+        bottom: 50px;
+        opacity: 1;
+    }
+    cursor: pointer;
 }
 
+.quebra2:hover{
+    background:rgb(62, 62, 62);
+
+    cursor: pointer;
+}
 
 .classifica{
     display: flex;
@@ -135,6 +177,7 @@ header{
     height: 30px;
     justify-content: space-between;
     align-items: center;
+    margin-top:12px ;
 }
 .info{
     display: flex;
@@ -147,6 +190,12 @@ header{
 .circulo{
     margin-top: 15px;
     border-radius: 300px;
+    width: 170px;
+    height: 170px;
+
+}
+.quadrado{
+    margin-top: 15px;
     width: 170px;
     height: 170px;
 
@@ -192,15 +241,107 @@ header{
     justify-content: center;
 }
 
-.play{
+
+#outroslinks{
+    margin-top: 50px;
     display: flex;
-    color: black;
-    background-color: rgb(0, 255, 0);
-    border-radius: 300px;
-    position: absolute;
-    font-size: 30px;
-    height: 50px;
+    justify-content: space-between;
+    
+}
+.arrumalink{
+    display: flex;
+    flex-direction: column;
+    margin-left: 20px;
+}
+.arrumalink a{
+    text-decoration: none;
+    color: rgb(150, 150, 150);
+    margin-top: 7px;
+    width: fit-content;
+}
+.arrumalink a:hover{
+    
+    text-decoration: underline;
+    color: rgb(255, 255, 255);
+
+}
+
+#Redes{
+    display: flex;
+    justify-content: end;
+    width: 200px;
+}
+
+
+.rede{
+    display: flex;
+    background-color: rgb(62, 62, 62);
     justify-content: center;
     align-items: center;
+    height: 40px;
+    width: 40px;
+    border-radius: 300px;
+    font-size: 20px;
+    color: white;
+    margin: 0px 10px ;
 }
+.rede:hover{
+    background-color: rgb(161, 161, 161);
+    cursor: auto;
+}
+
+#direitos{
+    color: gray;
+    font-size: 15px;
+    height: 150px;
+    margin: 30px ;
+    display: flex;
+    align-items: center;
+    border-top: 1px solid gray;
+}
+#lateral{
+    background-color: rgb(37, 37, 37);
+    margin-top: 80px;
+    margin-right: 10px;
+    margin-left: 10px;
+    width: 28%;
+    height: 550px;
+    position: fixed;
+    padding: 10px;
+    box-sizing: border-box;    
+    color: rgb(155, 154, 154);
+}
+#biblioteca a{
+    margin-left: 3px;
+    text-decoration: none;
+    color: rgb(155, 154, 154);
+}
+#biblioteca a:hover{
+    color: white;
+
+}
+#pagina{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    
+}
+#biblioteca{
+    color: rgb(155, 154, 154);
+    font-size: 21px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.mais{
+    font-size: 22px;
+}
+.mais:hover{
+    background-color: rgb(82, 82, 82);
+    border-radius: 300px;
+}
+
+
+
+
 
