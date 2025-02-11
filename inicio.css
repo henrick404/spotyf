@@ -341,6 +341,69 @@ header{
     border-radius: 300px;
 }
 
+#sugestao{
+    margin-top: 25px;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    grid-gap: 10px;
+    width: fit-content;
+    color: white;
+    background-color: rgb(94, 94, 94);
+    border-radius: 10px;
+    width: 340px;
+    b{
+        font-size: 18px;
+    }
+    button{
+        border-radius: 300px;
+        width: 130px;
+        height: 40px;
+    }
+}
+
+#info1{
+    margin-top: 200px;
+    display: flex;
+    flex-direction: column;
+    height: 80px;
+    justify-content: space-around;
+    a{  
+
+        margin-left: 20px;
+        text-decoration: none;
+        font-size: 12px;
+        color: rgb(82, 82, 82);
+    }
+
+  }
+#info2{
+
+
+    display: flex;
+    justify-content: space-between;
+
+
+}
+
+#brasil{
+    margin-top: 20px;
+    button{
+        background-color: transparent;
+        color: white;
+        border: white 1px solid;
+
+        width: 190px;
+        height: 40px;
+        border-radius: 300px;
+    }
+}
+
+
+
+
+
+
 
 
 
